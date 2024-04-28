@@ -10,5 +10,5 @@
 
 - name: Create a HTTP document directory
   ansible.builtin.file:
-  path: /usr/share/nginx/html/
-  state: directory
+    path: /usr/share/nginx/html/
+    state: directory
