@@ -1,0 +1,8 @@
+- name: Configure NodeJS /etc/yum.repos.d/mogodb.repo
+  ansible.builtin.shell: curl -sl https://rpm.nodesource.com/setup_lts.x | bash
+
+- name: Install NodeJS
+  ansible.builtin.yum:
+   name: NodeJS
+   state: installed
+
